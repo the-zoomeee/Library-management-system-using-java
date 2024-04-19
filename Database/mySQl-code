@@ -1,0 +1,85 @@
+create database library;
+use library;
+
+create table student(
+studentID varchar(10) primary key,
+name varchar(100),
+fatherName varchar(100),
+courseName varchar(20),
+branchNme varchar(20)
+);
+
+create table books(
+bookId varchar(10) primary key,
+name varchar(100),
+author VARCHAR(100),
+price varchar(10),
+publisherYear varchar(15)
+);
+
+create table issue(
+bookID varchar(10),
+studentID varchar(10),
+issueDate varchar(20),
+dueDate varchar(20),
+returnBook varchar(5)
+);
+
+
+INSERT INTO books (bookId, name, author, price, publisherYear) VALUES
+('01', 'The Great Gatsby', 'F. Scott Fitzgerald', '20.99', '1925'),
+('02', 'To Kill a Mockingbird', 'Harper Lee', '15.50', '1960'),
+('03', '1984', 'George Orwell', '18.25', '1949'),
+('04', 'Pride and Prejudice', 'Jane Austen', '12.75', '1813'),
+('05', 'The Catcher in the Rye', 'J.D. Salinger', '14.00', '1951'),
+('06', 'The Hobbit', 'J.R.R. Tolkien', '22.50', '1937'),
+('07', 'The Da Vinci Code', 'Dan Brown', '19.99', '2003'),
+('08', 'The Lord of the Rings', 'J.R.R. Tolkien', '35.00', '1954'),
+('09', 'The Hunger Games', 'Suzanne Collins', '16.75', '2008'),
+('10', 'Harry Potter and the Sorcerer''s Stone', 'J.K. Rowling', '21.99', '1997'),
+('11', 'Animal Farm', 'George Orwell', '13.50', '1945'),
+('12', 'Brave New World', 'Aldous Huxley', '17.95', '1932'),
+('13', 'The Grapes of Wrath', 'John Steinbeck', '18.75', '1939'),
+('14', 'The Adventures of Huckleberry Finn', 'Mark Twain', '14.25', '1884'),
+('15', 'Moby-Dick', 'Herman Melville', '20.50', '1851'),
+('16', 'War and Peace', 'Leo Tolstoy', '26.99', '1869'),
+('17', 'The Picture of Dorian Gray', 'Oscar Wilde', '16.00', '1890'),
+('18', 'The Odyssey', 'Homer', '19.25', '8th century BC'),
+('19', 'Frankenstein', 'Mary Shelley', '15.99', '1818'),
+('20', 'Wuthering Heights', 'Emily Brontë', '12.50', '1847'),
+('21', 'The Divine Comedy', 'Dante Alighieri', '21.75', '14th century'),
+('22', 'The Road', 'Cormac McCarthy', '17.50', '2006'),
+('23', 'A Tale of Two Cities', 'Charles Dickens', '11.99', '1859'),
+('24', 'One Hundred Years of Solitude', 'Gabriel García Márquez', '23.25', '1967'),
+('25', 'The Kite Runner', 'Khaled Hosseini', '14.95', '2003'),
+('26', 'Gone with the Wind', 'Margaret Mitchell', '20.75', '1936'),
+('27', 'Les Misérables', 'Victor Hugo', '28.50', '1862'),
+('28', 'Catch-22', 'Joseph Heller', '16.25', '1961'),
+('29', 'The Count of Monte Cristo', 'Alexandre Dumas', '19.99', '1844'),
+('30', 'The Alchemist', 'Paulo Coelho', '12.75', '1988'),
+('31', 'The Old Man and the Sea', 'Ernest Hemingway', '15.50', '1952'),
+('32', 'Anna Karenina', 'Leo Tolstoy', '22.99', '1877'),
+('33', 'Jane Eyre', 'Charlotte Brontë', '18.25', '1847'),
+('34', 'Crime and Punishment', 'Fyodor Dostoevsky', '17.75', '1866'),
+('35', 'The Scarlet Letter', 'Nathaniel Hawthorne', '13.99', '1850'),
+('36', 'Lord of the Flies', 'William Golding', '14.50', '1954'),
+('37', 'Don Quixote', 'Miguel de Cervantes', '25.00', '1605'),
+('38', 'The Brothers Karamazov', 'Fyodor Dostoevsky', '24.99', '1880'),
+('39', 'The Bell Jar', 'Sylvia Plath', '16.95', '1963'),
+('40', 'The Sun Also Rises', 'Ernest Hemingway', '19.25', '1926'),
+('41', 'A Clockwork Orange', 'Anthony Burgess', '15.75', '1962'),
+('42', 'The Adventures of Sherlock Holmes', 'Arthur Conan Doyle', '11.50', '1892'),
+('43', 'The Secret Garden', 'Frances Hodgson Burnett', '12.99', '1911'),
+('44', 'The Shining', 'Stephen King', '18.50', '1977'),
+('45', 'The Great Expectations', 'Charles Dickens', '17.25', '1861'),
+('46', 'The Handmaid''s Tale', 'Margaret Atwood', '20.99', '1985'),
+('47', 'A Game of Thrones', 'George R.R. Martin', '23.75', '1996'),
+('48', 'A Wrinkle in Time', 'Madeleine L''Engle', '14.25', '1962'),
+('49', 'Slaughterhouse-Five', 'Kurt Vonnegut', '16.50', '1969'),
+('50', 'The Stand', 'Stephen King', '21.95', '1978');
+
+
+
+select * from student;
+select * from books;
+select * from issue;
